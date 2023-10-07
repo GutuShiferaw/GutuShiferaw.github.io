@@ -156,34 +156,3 @@ h3 {
 }
 
 
-@media (max-width: 768px) {
-        /* Apply styles for mobile devices here */
-  .nav-bar li {
-    display: block; /* Stack navigation links on top of each other */
-    margin: 0;
-    padding: 10px 0;
-  }
-
-  .nav-bar a {
-    font-size: 14px;
-    display: block; /* Ensure links take up the full width on mobile */
-  }
-
-  .content {
-    padding: 10px; /* Reduce padding for mobile */
-  }
-
-  .memoji {
-    margin-top: 10px; /* Reduce space between paragraph and memoji */
-  }
-
-  .button {
-    margin-top: 10px; /* Reduce space between memoji and button */
-  }
-
-  /* Make the content scrollable on mobile */
-  .content {
-    overflow-y: scroll;
-    max-height: calc(100vh - 160px); /* Adjust the value as needed */
-  }
-}
