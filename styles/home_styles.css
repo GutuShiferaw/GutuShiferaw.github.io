@@ -1,5 +1,6 @@
 body {
   background-color: #343434;
+  /*flex-direction: column;*/
   min-height: 100vh; 
   margin: 0;
 }
@@ -7,19 +8,16 @@ body {
 header nav {
   background-color: #343434; /
   padding: 50px 0; 
-
 }
 
-header {
-  margin-top: 30px;
- }
+
 .nav-bar {
   list-style-type: none; 
   margin: 0; 
   padding: 0; 
   text-align: right;
   margin-right: 50px;
-  
+  margin-top: 10px;
 }
 
 .nav-bar li {
@@ -56,7 +54,7 @@ footer {
     position: fixed; /* Set the position to fixed */
     bottom: 0;
     width: 100%;
-    height: 100px;
+    height: 120px;
     background-color: #333333;
     color: white;
     text-align: center;
@@ -86,7 +84,7 @@ main {
     display: flex;
     justify-content: space-evenly; /* Create space between image and text */
     align-items: center;
-    padding: 0px 50px;
+    padding: 0px 100px;
 }
 
 /* CSS for the text container */
@@ -95,7 +93,7 @@ main {
     flex-direction: column;
     max-width: 75%;
     margin-left: 50px;
-    animation: bounce-animation 2s ease infinite;
+    animation: bounce-animation 2s ease 1;
 }
 
 /* CSS for the Memoji image */
@@ -108,7 +106,7 @@ main {
 }
 
 /* CSS for the headings and text */
-h2, h1, h3, p {
+h2, h1, h3 {
     margin: 0;
     padding: 10px 0;
 }
@@ -148,11 +146,10 @@ h3 {
     text-decoration: none;
     background-color: #008000;
     margin-left: 15%;
-    animation: bounce-animation 2s ease infinite;
+    animation: bounce-animation 2s ease 1;
 
 }
 .btn:hover {
   background-color: #ff6600;
 }
-
 
