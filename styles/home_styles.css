@@ -10,14 +10,16 @@ header nav {
 
 }
 
-
+header {
+  margin-top: 30px;
+ }
 .nav-bar {
   list-style-type: none; 
   margin: 0; 
   padding: 0; 
   text-align: right;
   margin-right: 50px;
-  margin-top: 20px;
+  
 }
 
 .nav-bar li {
