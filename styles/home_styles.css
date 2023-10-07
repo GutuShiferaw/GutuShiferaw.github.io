@@ -150,76 +150,33 @@ h3 {
 }
 
 @media (max-width: 768px) {
-        /* General styles */
-    body {
-      background-color: #343434;
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
+        /* Apply styles for mobile devices here */
+  .nav-bar li {
+    display: block; /* Stack navigation links on top of each other */
+    margin: 0;
+    padding: 10px 0;
+  }
 
-    /* Header styles */
-    header {
-      background-color: #343434;
-      padding: 20px 0;
-      text-align: center;
-    }
+  .nav-bar a {
+    font-size: 14px;
+    display: block; /* Ensure links take up the full width on mobile */
+  }
 
-    .nav-bar {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
+  .content {
+    padding: 10px; /* Reduce padding for mobile */
+  }
 
-    .nav-bar li {
-      margin: 0;
-      padding: 10px 0;
-    }
+  .memoji {
+    margin-top: 10px; /* Reduce space between paragraph and memoji */
+  }
 
-    .nav-bar a {
-      text-decoration: none;
-      color: #fff;
-      font-weight: bold;
-      font-size: 16px;
-      display: block;
-    }
+  .button {
+    margin-top: 10px; /* Reduce space between memoji and button */
+  }
 
-    .nav-bar a:hover {
-      color: #00FF00;
-    }
-
-    .nav-bar img {
-      width: 60px;
-      height: 30px;
-      border-radius: 50%;
-      margin: 0 auto;
-    }
-
-    /* Footer styles */
-    footer {
-      background-color: #333333;
-      color: white;
-      text-align: center;
-      padding: 20px 0;
-    }
-
-    #footer-img {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      margin: 0 auto;
-    }
-
-    /* Media query for mobile devices */
-    @media screen and (max-width: 768px) {
-      .nav-bar li {
-        padding: 10px 0;
-      }
-
-      .nav-bar a {
-        font-size: 14px;
-      }
-
-      /* Additional mobile-specific styles can be added here */
-    }
+  /* Make the content scrollable on mobile */
+  .content {
+    overflow-y: scroll;
+    max-height: calc(100vh - 160px); /* Adjust the value as needed */
+  }
+}
