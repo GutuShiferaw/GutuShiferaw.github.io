@@ -95,7 +95,7 @@ main {
     flex-direction: column;
     max-width: 75%;
     margin-left: 50px;
-    animation: bounce-animation 2s ease 1;
+    animation: bounce-animation 2s ease infinite;
 }
 
 /* CSS for the Memoji image */
