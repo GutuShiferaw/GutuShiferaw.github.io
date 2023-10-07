@@ -111,7 +111,7 @@ main {
  .text {
   display: flex;
   color: white;
-  animation: bounce-animation 2s ease 1;
+  animation: bounce-animation 2s ease infinite;
   flex-direction: column;
   max-width: 50%;
  }
