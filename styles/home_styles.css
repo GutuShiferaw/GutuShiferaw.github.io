@@ -152,8 +152,10 @@ h3 {
 
 }
 .btn:hover {
-    background-color: #ff6600;
+  background-color: #ff6600;
 }
+
+
 @media (max-width: 768px) {
         /* Apply styles for mobile devices here */
   .nav-bar li {
