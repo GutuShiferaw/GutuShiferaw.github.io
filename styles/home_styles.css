@@ -148,7 +148,7 @@ h3 {
     text-decoration: none;
     background-color: #008000;
     margin-left: 15%;
-    animation: bounce-animation 2s ease 1;
+    animation: bounce-animation 2s ease infinite;
 
 }
 .btn:hover {
