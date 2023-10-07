@@ -151,6 +151,9 @@ h3 {
     animation: bounce-animation 2s ease 1;
 
 }
+.btn:hover{
+    background-color: #ff6600;
+}
 
 @media (max-width: 768px) {
         /* Apply styles for mobile devices here */
