@@ -1,5 +1,4 @@
 <!Doctype html>
-<html lang="en">
 <head>
 	<title>Contact</title>
 	<meta charset="UTF-8">
@@ -20,7 +19,19 @@
     	</ul>
     </nav>
 	</header>
-	
+	<h2>Contact Me</h2>
+    <form action="process_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" required></textarea>
+        
+        <input type="submit" value="Submit">
+    </form>
 
     
     <footer>
@@ -28,4 +39,3 @@
         	<a href="https://www.linkedin.com/in/gutu-shiferaw-049086261/"><img src="src/github_logo.jpeg" alt="github-logo" id="github-logo"></a>
     </footer>
 	</body>
-	</html>
