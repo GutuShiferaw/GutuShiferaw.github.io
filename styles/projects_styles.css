@@ -1,9 +1,7 @@
 body {
   background-color: #343434;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; 
   margin: 0;
+ 
 }
 
 header nav {
@@ -18,7 +16,7 @@ header nav {
   padding: 0; 
   text-align: right;
   margin-right: 50px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .nav-bar li {
@@ -55,19 +53,19 @@ footer {
     position: fixed; /* Set the position to fixed */
     bottom: 0;
     width: 100%;
-    height: 100px;
+    height: 10%;
     background-color: #333333;
     color: white;
     text-align: center;
-    padding: 10px 0; /* Adjust padding as needed */
+    padding: 10px;
 }
 
 /* CSS for the footer image */
-#footer-img {
+footer img {
     width: 50px;
     height: 50px;
-    border-radius: 50%;
     margin-top: 10px; /* Adjust margin-top to center the image vertically */
+    padding: 5px;
 }
 /*Default code above*/
 @keyframes bounce-animation {
@@ -78,6 +76,7 @@ footer {
     transform: translateY(-20px); /* Peak position - adjust the height of the bounce */
   }
 }
+
 h1 {
   color:#00FF00 ;
   font-size: 32px;
@@ -92,10 +91,10 @@ h1 {
   grid-template-columns: repeat(2, 500px); /* Two columns of 600px each */
   grid-template-rows: repeat(2, 250px); /* Two rows of 300px each */
   grid-gap: 20px; /* Adjust the gap between sections as needed */
-  max-height: 350px;
+  padding: 0 25%;
+  height: 100vh;
   overflow-y: auto;
-  padding: 80px 250px;
-  width: 100%;
+  
 }
 
 .grid-item {
@@ -105,7 +104,6 @@ h1 {
   justify-content: center;
   font-size: 16px;
   border-radius: 10px;
-  position: relative;
 
 }
 .popup-paragraph {
