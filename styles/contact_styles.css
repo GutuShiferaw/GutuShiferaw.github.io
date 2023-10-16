@@ -60,6 +60,14 @@ footer {
     padding: 10px;
 }
 /*Default code above*/
+h1{
+  color:#00FF00;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 50px;
+  
+}
 form {
     background-color: #fff;
     max-width: 600px;
