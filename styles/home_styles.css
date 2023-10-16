@@ -78,6 +78,8 @@ main {
     justify-content: space-evenly; /* Create space between image and text */
     align-items: center;
     padding: 0px 100px;
+    max-height: 500px;
+    overflow-y: auto;
 }
 
 /* CSS for the text container */
