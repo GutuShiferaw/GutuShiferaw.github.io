@@ -50,22 +50,7 @@ header nav {
 }
 
 footer {
-    position: fixed; /* Set the position to fixed */
-    bottom: 0;
-    width: 100%;
-    height: 10%;
-    background-color: #333333;
-    color: white;
     text-align: center;
-    padding: 10px;
-}
-
-/* CSS for the footer image */
-footer img {
-    width: 50px;
-    height: 50px;
-    margin-top: 10px; /* Adjust margin-top to center the image vertically */
-    padding: 5px;
 }
 /*Default code above*/
 @keyframes bounce-animation {
