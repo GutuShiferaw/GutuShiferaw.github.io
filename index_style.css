@@ -464,6 +464,147 @@ form input[type="submit"] {
   justify-content: center;  
 }
 
+/*------------------------------------------------------------------------------*/
+
+/*different media Css*/
+
+/*-----------------------------------------------------------------------------*/
+
+
+/* Mobile-first responsive design */
+@media (max-width: 767px) {
+  /* Adjust styles for screens smaller than 768px wide */
+
+  .nav-bar {
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  .nav-bar li {
+    display: block;
+    margin: 10px 0;
+    padding: 0;
+  }
+
+  .nav-bar a {
+    display: block;
+    padding: 5px 0;
+  }
+
+  .header nav {
+    padding: 10px;
+  }
+
+  /* ... */
+
+  /* Home page mobile styles */
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-text {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  #memoji {
+    margin-right: 0;
+  }
+
+  /* ... */
+
+  /* About page mobile styles */
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-text {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  #Myphoto {
+    margin-right: 0;
+  }
+
+  /* ... */
+
+  /* Resume page mobile styles */
+  .resume-sections-container {
+    padding: 10px;
+  }
+
+  .resume-sections-container h1 {
+    text-align: center;
+  }
+
+  .resume-sections-container p {
+    text-align: center;
+  }
+
+  /* ... */
+
+  /* Projects page mobile styles */
+  .projects-container {
+    padding: 10px;
+  }
+
+  .projects-container h1 {
+    text-align: center;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr; /* Single column */
+    grid-template-rows: repeat(4, auto); /* Adjust as needed */
+  }
+
+  .grid-item {
+    background-image: none;
+    text-align: center;
+  }
+
+  .popup-paragraph {
+    position: relative;
+    top: 0;
+    display: block;
+    text-align: center;
+  }
+
+  i {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  /* ... */
+
+  /* Contacts page mobile styles */
+  .form-container {
+    padding: 10px;
+  }
+
+  form {
+    max-width: 100%;
+  }
+
+  form label {
+    margin: 10px 0;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 100%;
+  }
+
+  form input[type="submit"] {
+    margin-left: 0;
+  }
+
+  /* ... */
+}
 
 
 
