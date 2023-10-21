@@ -1,0 +1,625 @@
+body {
+  background-image: url('src/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:  #343434;
+    opacity: 90%; 
+    color: white; 
+}
+
+header nav {
+  padding: 20px 50px; 
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+.nav-bar {  
+  list-style-type: none; 
+  margin: 0; 
+  padding: 0; 
+  text-align: right;
+  margin-right: 50px;
+  margin-top: 10px;
+  z-index: 1000;
+}
+
+.nav-bar li {
+  display: inline; 
+  margin-right: 20px;
+  padding: 0 10px;
+}
+
+
+.nav-bar a {
+  text-decoration: none; 
+  color: #fff; 
+  font-weight: bold; 
+  font-size: 16px; 
+
+}
+
+
+.nav-bar li:first-child {
+  margin-right: 30px;
+}
+
+.nav-bar a:hover {
+  color: #00FF00;
+}
+
+.nav-container img {
+	width: 60px;
+	height: 30px;
+	border-radius: 50%;er
+}
+@keyframes bounce-animation {
+  0%, 100% {
+    transform: translateY(0); /* Start and end position */
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+hr {
+    border-top: 20px solid grey;
+    opacity: 90%; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+
+
+/*------------------------------------------------------------------------------*/
+
+/*Home page Css*/
+
+/*-----------------------------------------------------------------------------*/
+.home-container {
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+    margin-top: 10px;
+    padding: 0 50px;
+    min-height: 100vh;
+}
+
+.home-text {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin-left: 50px;
+    animation: bounce-animation 2s ease 1;
+}
+
+/* CSS for the Memoji image */
+#memoji {
+    width: 400px; 
+    height: auto; 
+    margin-top: 20px;
+    margin-right: 100px;
+    animation: bounce-animation 2s ease 1;
+
+}
+
+.home-text h2, .home-text h1,.home-text h3 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+/* Additional styles for headings and text */
+.home-text h2 {
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.home-text h1 {
+    color: white;
+    font-size: 70px; /* Set a fixed font size */
+    font-weight: bold;
+}
+
+.home-text h3 {
+    font-size: 26px;
+    color: #fff;
+    text-shadow:
+      0 0 4px #0a0,
+      0 0 6px #0a0,
+      0 0 8px #0a0,
+      0 0 10px #0a0,
+      0 0 12px #0a0,
+      0 0 14px #0a0,
+      0 0 16px #0a0,
+      0 0 18px #0a0;
+  }
+
+.home-text p {
+    max-width: 50%; /* Allow text to be responsive */
+    color: white;
+}
+
+.home-text .btn {
+    display: block;
+    padding: 15px 30px; /* Adjust padding as needed */
+    width: 100px; 
+    border: none;
+    border-radius: 50px; 
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out; 
+    text-decoration: none;
+    text-align: center;
+    background-color: #008000;
+    margin-left: 15%;
+    animation: bounce-animation 2s ease 1;
+}
+.home-text .btn:hover {
+  background-color: #ff6600;
+}
+
+/*------------------------------------------------------------------------------*/
+
+/*About page Css*/
+
+/*-----------------------------------------------------------------------------*/
+
+
+.about-container {
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+    margin-top: 10px;
+    padding: 0 50px;
+    min-height: 100vh;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin-left: 50px;
+    animation: bounce-animation 2s ease 1;
+}
+.about-text h1 {
+  color:#00FF00;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.about-text p {
+      color: white;
+      width: 90%;
+      text-align: justify;
+      font-size: 18px;
+}
+ 
+#Myphoto {
+  height: 400px;
+  object-fit: cover; 
+  border-style: ridge;
+  border-radius: 50%;
+  margin-right: 15%;
+} 
+
+/*------------------------------------------------------------------------------*/
+
+/*Resume page Css*/
+
+/*-----------------------------------------------------------------------------*/
+
+.resume-sections-container {
+    padding: 50px 20%;
+    min-height: 100vh;
+    box-sizing: border-box;
+
+}
+
+.resume-sections-container h1 {
+  color: #00FF00;
+  font-size: 28px;
+  font-style: italic;
+}
+
+.resume-sections-container p {
+  color: #87cefa;
+  font-size: 18px;
+}
+
+.resume-sections-container ul {
+  color: white;
+  font-size: 16px;
+}
+
+#linkedin-link {
+  color: #87cefa; 
+  text-decoration: underline;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.contact-section, .skills, .Education, .Professional-Experience{
+  max-width: 100%;
+
+}
+.contact-section:hover, .skills:hover, .Education:hover, .Professional-Experience:hover {
+    box-shadow: 5px 5px 10px #343434; /* Add a box shadow on hover */
+    transition: box-shadow 0.3s ease-in-out; /* Apply the transition effect */
+}
+
+.resume-sections-container .buttons {
+  margin-left: 25%;
+  margin-top: 30px;
+}
+
+#download-button, #contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    margin: 5px;
+    border-radius: 50px; 
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out; 
+    text-decoration: none;
+}
+#download-button{
+  background-color: #008000;
+}
+
+#contact-button{
+  background-color: #a8a8a8;
+}
+
+#download-button:hover, #contact-button:hover {
+    background-color: #ff6600;
+}
+
+/*------------------------------------------------------------------------------*/
+
+/*Projects page Css*/
+
+/*-----------------------------------------------------------------------------*/
+
+
+.projects-container {
+    padding: 50px 20%;
+    min-height: 100vh;
+    box-sizing: border-box;
+
+}
+
+.projects-container h1 {
+  color:#00FF00 ;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 500px); /* Two columns of 600px each */
+  grid-template-rows: repeat(2, 250px); /* Two rows of 300px each */
+  grid-gap: 20px; /* Adjust the gap between sections as needed */
+}
+
+.grid-item {
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  border-radius: 10px;
+
+}
+.grid-item.project1{
+  background-image: url('src/Gui.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.grid-item.project2{
+  background-image: url('src/drop_temp.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.grid-item.project3{
+  background-image: url('src/steg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.grid-item.project4{
+  background-image: url('src/OECT.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.popup-paragraph {
+  display: none; /* Initially hide the paragraphs */
+  background-color: rgba(0, 0, 0, 0.9); /* Background color for the popup */
+  color: white; /* Text color for the popup */
+  padding: 50px 25px; /* Add some padding to the popup */
+  border-radius: 5px;
+  position: absolute; /* Position absolutely within the .grid-item */
+  top: 100%; /* Initially position below the .grid-item */
+  left: 0;
+  width: 100%;
+  transition: top 0.3s ease-in-out; /* Add a smooth transition for the top property */
+  max-width: 90%;
+}
+
+.grid-item:hover .popup-paragraph {
+  background-color: #100c08 ;
+  display: block; /* Show the paragraph when hovering over the .grid-item */
+  top: 0; /* Slide the paragraph up to cover the .grid-item on hover */
+
+}
+.grid-item:hover {
+  animation: bounce-animation 2s ease infinite;
+}
+i {
+  font-size: 24px; 
+  margin-left: 10px;
+  color: white;
+  margin-top: 30px;
+  margin-left: 50%;
+}
+
+/*------------------------------------------------------------------------------*/
+
+/*contacts page Css*/
+
+/*-----------------------------------------------------------------------------*/
+
+.form-container {
+    padding: 100px 20%;
+    min-height: 100vh;
+    box-sizing: border-box;
+   
+}
+
+.form-container h1 {
+  color:#00FF00 ;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: bold;
+  margin-left:10%;
+  margin-top: 50px;
+  animation: bounce-animation 3s ease 1;
+}
+
+form {
+    background-color:  #555555;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: bounce-animation 3s ease 1;
+
+}
+
+form label {
+    display: block;
+    margin: 15px 10px;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #555555;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 50%;
+}
+
+
+/*------------------------------------------------------------------------------*/
+
+/*footer Css*/
+
+/*-----------------------------------------------------------------------------*/
+
+.site-footer {
+  background-color: #333; 
+  color: #fff; 
+  padding: 20px 0; 
+}
+
+.site-footer a {
+  color: #fff; 
+  text-decoration: none; 
+}
+.site-footer p {
+    text-align: center;
+}
+
+.site-footer a:hover {
+  color: #007bff; 
+}
+
+.site-footer i {
+    font-size: 40px;
+}
+
+.social-icons {
+  display: flex; 
+  gap: 10px;
+  align-items: center;
+  justify-content: center;  
+}
+
+
+/*------------------------------------------------------------------------------*/
+
+/*different media Css*/
+
+/*-----------------------------------------------------------------------------*/
+
+
+/* Mobile-first responsive design */
+@media (max-width: 767px) {
+  /* Adjust styles for screens smaller than 768px wide */
+
+  .nav-bar {
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  .nav-bar li {
+    display: block;
+    margin: 10px 0;
+    padding: 0;
+  }
+
+  .nav-bar a {
+    display: block;
+    padding: 5px 0;
+  }
+
+  .header nav {
+    padding: 10px;
+  }
+
+  /* ... */
+
+  /* Home page mobile styles */
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-text {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  #memoji {
+    margin-right: 0;
+  }
+
+  /* ... */
+
+  /* About page mobile styles */
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-text {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  #Myphoto {
+    margin-right: 0;
+  }
+
+  /* ... */
+
+  /* Resume page mobile styles */
+  .resume-sections-container {
+    padding: 10px;
+  }
+
+  .resume-sections-container h1 {
+    text-align: center;
+  }
+
+  .resume-sections-container p {
+    text-align: center;
+  }
+
+  /* ... */
+
+  /* Projects page mobile styles */
+  .projects-container {
+    padding: 10px;
+  }
+
+  .projects-container h1 {
+    text-align: center;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr; /* Single column */
+    grid-template-rows: repeat(4, auto); /* Adjust as needed */
+  }
+
+  .grid-item {
+    background-image: none;
+    text-align: center;
+  }
+
+  .popup-paragraph {
+    position: relative;
+    top: 0;
+    display: block;
+    text-align: center;
+  }
+
+  i {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  /* ... */
+
+  /* Contacts page mobile styles */
+  .form-container {
+    padding: 10px;
+  }
+
+  form {
+    max-width: 100%;
+  }
+
+  form label {
+    margin: 10px 0;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 100%;
+  }
+
+  form input[type="submit"] {
+    margin-left: 0;
+  }
+
+  /* ... */
+}
