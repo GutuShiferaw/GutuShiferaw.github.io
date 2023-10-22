@@ -1,0 +1,541 @@
+body {
+  background-image: url('src/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:  #343434;
+    opacity: 90%; 
+    color: white; 
+}
+
+header nav {
+  padding: 20px 50px; 
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+.nav-bar {  
+  list-style-type: none; 
+  margin: 0; 
+  padding: 0; 
+  text-align: right;
+  margin-right: 50px;
+  margin-top: 10px;
+  z-index: 1000;
+}
+
+.nav-bar li {
+  display: inline; 
+  margin-right: 20px;
+  padding: 0 10px;
+}
+
+
+.nav-bar a {
+  text-decoration: none; 
+  color: #fff; 
+  font-weight: bold; 
+  font-size: 16px; 
+
+}
+
+
+.nav-bar li:first-child {
+  margin-right: 30px;
+}
+
+.nav-bar a:hover {
+  color: #00FF00;
+}
+
+.nav-container img {
+	width: 60px;
+	height: 30px;
+	border-radius: 50%;er
+}
+@keyframes bounce-animation {
+  0%, 100% {
+    transform: translateY(0); /* Start and end position */
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+hr {
+    border-top: 20px solid grey;
+    opacity: 90%; 
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+
+.dropdown-button {
+    display: none;
+}
+/*------------------------------------------------------------------------------*/
+
+/*Home page Css*/
+
+/*-----------------------------------------------------------------------------*/
+.home-container {
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+    margin-top: 10px;
+    padding: 0 50px;
+    min-height: 100vh;
+}
+
+.home-text {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin-left: 50px;
+    animation: bounce-animation 2s ease 1;
+}
+
+/* CSS for the Memoji image */
+#memoji {
+    width: 500px; 
+    height: auto; 
+    margin-top: 20px;
+    margin-right: 200px;
+    animation: bounce-animation 2s ease 1;
+
+}
+
+.home-text h2, .home-text h1,.home-text h3 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+/* Additional styles for headings and text */
+.home-text h2 {
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.home-text h1 {
+    color: white;
+    font-size: 70px; /* Set a fixed font size */
+    font-weight: bold;
+}
+
+.home-text h3 {
+    font-size: 26px;
+    color: #fff;
+    text-shadow:
+      0 0 4px #0a0,
+      0 0 6px #0a0,
+      0 0 8px #0a0,
+      0 0 10px #0a0,
+      0 0 12px #0a0,
+      0 0 14px #0a0,
+      0 0 16px #0a0,
+      0 0 18px #0a0;
+  }
+
+.home-text p {
+    max-width: 50%; /* Allow text to be responsive */
+    color: white;
+}
+
+.home-text .btn {
+    display: block;
+    padding: 15px 30px; /* Adjust padding as needed */
+    width: 100px; 
+    border: none;
+    border-radius: 50px; 
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out; 
+    text-decoration: none;
+    text-align: center;
+    background-color: #008000;
+    margin-left: 15%;
+    animation: bounce-animation 2s ease 1;
+}
+.home-text .btn:hover {
+  background-color: #ff6600;
+}
+
+/*------------------------------------------------------------------------------*/
+
+/*About page Css*/
+
+/*-----------------------------------------------------------------------------*/
+
+
+.about-container {
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+    margin-top: 10px;
+    padding: 0 50px;
+    min-height: 100vh;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin-left: 50px;
+    animation: bounce-animation 2s ease 1;
+}
+.about-text h1 {
+  color:#00FF00;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.about-text p {
+      color: white;
+      width: 90%;
+      text-align: justify;
+      font-size: 18px;
+}
+ 
+#Myphoto {
+  width: 300px;
+  height: auto;
+  object-fit: cover; 
+  border-style: ridge;
+  border-radius: 50%;
+  margin-right: 15%;
+ 
+} 
+
+/*------------------------------------------------------------------------------*/
+
+/*Resume page Css*/
+
+/*-----------------------------------------------------------------------------*/
+
+.resume-sections-container {
+    padding: 50px 20%;
+    min-height: 100vh;
+    box-sizing: border-box;
+
+}
+
+.resume-sections-container h1 {
+  color: #00FF00;
+  font-size: 28px;
+  font-style: italic;
+}
+
+.resume-sections-container p {
+  color: #87cefa;
+  font-size: 18px;
+}
+
+.resume-sections-container ul {
+  color: white;
+  font-size: 16px;
+}
+
+#linkedin-link {
+  color: #87cefa; 
+  text-decoration: underline;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.contact-section, .skills, .Education, .Professional-Experience{
+  max-width: 100%;
+
+}
+.contact-section:hover, .skills:hover, .Education:hover, .Professional-Experience:hover {
+    box-shadow: 5px 5px 10px #343434; /* Add a box shadow on hover */
+    transition: box-shadow 0.3s ease-in-out; /* Apply the transition effect */
+}
+
+.resume-sections-container .buttons {
+  margin-left: 25%;
+  margin-top: 30px;
+}
+
+#download-button, #contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    margin: 5px;
+    border-radius: 50px; 
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out; 
+    text-decoration: none;
+}
+#download-button{
+  background-color: #008000;
+}
+
+#contact-button{
+  background-color: #a8a8a8;
+}
+
+#download-button:hover, #contact-button:hover {
+    background-color: #ff6600;
+}
+
+/*------------------------------------------------------------------------------*/
+
+/*Projects page Css*/
+
+/*-----------------------------------------------------------------------------*/
+
+
+.projects-container {
+    padding: 50px 20%;
+    min-height: 100vh;
+    box-sizing: border-box;
+
+}
+
+.projects-container h1 {
+  color:#00FF00 ;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 500px); /* Two columns of 600px each */
+  grid-template-rows: repeat(2, 250px); /* Two rows of 300px each */
+  grid-gap: 20px; /* Adjust the gap between sections as needed */
+  padding: 30px 0;
+}
+
+.grid-item {
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  border-radius: 10px;
+
+}
+.grid-item.project1{
+  background-image: url('src/Gui.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.grid-item.project2{
+  background-image: url('src/drop_temp.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.grid-item.project3{
+  background-image: url('src/steg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.grid-item.project4{
+  background-image: url('src/OECT.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.popup-paragraph {
+  display: none; /* Initially hide the paragraphs */
+  background-color: rgba(0, 0, 0, 0.9); /* Background color for the popup */
+  color: white; /* Text color for the popup */
+  padding: 50px 25px; /* Add some padding to the popup */
+  border-radius: 5px;
+  position: absolute; /* Position absolutely within the .grid-item */
+  top: 100%; /* Initially position below the .grid-item */
+  left: 0;
+  width: 100%;
+  transition: top 0.3s ease-in-out; /* Add a smooth transition for the top property */
+  max-width: 90%;
+}
+
+.grid-item:hover .popup-paragraph {
+  background-color: #100c08 ;
+  display: block; /* Show the paragraph when hovering over the .grid-item */
+  top: 0; /* Slide the paragraph up to cover the .grid-item on hover */
+
+}
+.grid-item:hover {
+  animation: bounce-animation 2s ease infinite;
+}
+i {
+  font-size: 24px; 
+  margin-left: 10px;
+  color: white;
+  margin-top: 30px;
+  margin-left: 50%;
+}
+
+/*------------------------------------------------------------------------------*/
+
+/*contacts page Css*/
+
+/*-----------------------------------------------------------------------------*/
+
+.form-container {
+    padding: 100px 20%;
+    min-height: 100vh;
+    box-sizing: border-box;
+   
+}
+
+.form-container h1 {
+  color:#00FF00 ;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 50px;
+  animation: bounce-animation 3s ease 1;
+  text-align: center;
+}
+
+form {
+    background-color:  #555555;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: bounce-animation 3s ease 1;
+    text-align: left; /* Align form content to the left */
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px; /* Adjust spacing between labels and inputs */
+    font-weight: bold;
+    color: white;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+    width: 95%; /* Make the input fields 50% width */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #555555;
+    color: white;
+}
+
+form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block; /* Change the submit button to inline-block */
+    margin: 10px 50%; /* Adjust margin for the submit button */
+}
+
+/* Add hover effect for the submit button */
+form input[type="submit"]:hover {
+    background-color: #ff6600;
+}
+
+
+
+/*------------------------------------------------------------------------------*/
+
+/*footer Css*/
+
+/*-----------------------------------------------------------------------------*/
+
+.site-footer {
+  background-color: #333; 
+  color: #fff; 
+  padding: 20px 0; 
+}
+
+.site-footer a {
+  color: #fff; 
+  text-decoration: none; 
+}
+.site-footer p {
+    text-align: center;
+}
+
+.site-footer a:hover {
+  color: #007bff; 
+}
+
+.site-footer i {
+    font-size: 40px;
+}
+
+.social-icons {
+  display: flex; 
+  gap: 10px;
+  align-items: center;
+  justify-content: center;  
+}
+
+
+/*------------------------------------------------------------------------------*/
+
+/*different media Css*/
+
+/*-----------------------------------------------------------------------------*/
+
+@media (max-width: 768px) {
+    .nav-bar {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        padding: 10px;
+        z-index: 1000;
+        flex-direction: column;
+    }
+
+    .nav-container {
+        flex-direction: row; /* Keep the logo and button side by side */
+    }
+
+    .nav-bar li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #menu-button {
+        display: block;
+        background: url('src/dropdown.jpg') no-repeat;
+        width: 40px;
+        height: 40px;
+        background-size: contain;
+        border: none;
+        background-color: transparent;
+    }
+
+    .nav-container img {
+        width: 60px;
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 10px; /* Add margin between logo and button */
+    }
+}
